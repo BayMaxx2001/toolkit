@@ -1,0 +1,12 @@
+output: ./
+name: policies_types
+package: main
+
+groups:
+  common_actions: ["create","read","update","delete"]
+
+resource:
+  user: ["common_actions","login"]
+  post: ["comment"]
+
+
